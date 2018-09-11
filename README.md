@@ -1,6 +1,6 @@
 # Coding test project for Blackswan
 
-This application is used to mock bank link to wallet functionality for banks to dev against.
+This application is used to assess developer ability.
 
 ## Endpoints
 
