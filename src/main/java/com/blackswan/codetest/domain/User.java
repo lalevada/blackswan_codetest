@@ -3,7 +3,6 @@ package com.blackswan.codetest.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -39,7 +38,7 @@ public class User {
     @Column(name="USERNAME")
     private String username;
 
-    @OneToMany(mappedBy="user", cascade = CascadeType.ALL, fetch = FetchType.EAGER, targetEntity = Task.class)
+    @OneToMany(mappedBy="user", fetch = FetchType.EAGER, targetEntity = Task.class)
     private List<Task> tasks;
 
     public Long getId() {

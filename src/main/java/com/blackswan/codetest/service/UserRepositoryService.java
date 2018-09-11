@@ -85,9 +85,9 @@ public class UserRepositoryService implements UserService {
     @Override
     public void deleteUserTask(Long userId, Long taskId) {
 
-        Task storedtask = this.fetchUserTask(userId, taskId);
+        Task task = this.fetchUserTask(userId, taskId);
 
-        taskRepository.delete(storedtask);
+        taskRepository.deleteById(task.getId());
     }
 
     @Override
