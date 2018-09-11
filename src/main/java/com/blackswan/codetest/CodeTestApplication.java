@@ -7,6 +7,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * @author Mark Andrews
+ *
+ * There are no tests included, this would be unacceptable in prodiction.
+ *
+ * No parameters are validated for null as there is no indication of this
+ * in the instructions.
  */
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = "com.blackswan.codetest")
